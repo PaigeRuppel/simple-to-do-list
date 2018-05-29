@@ -1,3 +1,20 @@
 body {
+	background: grey;
+	color: white;
+}
+
+.container {
+	width: 300px;
 	background: blue;
+	margin: 100px auto;
+	border: solid 1px black;
+}
+
+ul {
+	list-style: none;
+}
+
+.completed {
+	color: grey;
+	text-decoration: line-through;
 }
