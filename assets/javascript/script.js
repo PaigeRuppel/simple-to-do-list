@@ -18,5 +18,5 @@ $("input[type='text']").keypress(function(event) {
 
 
 function newTodo(todo) {
-	return "<li><span>X</span> " + todo + "</li>";
+	return "<li><span><i class='fa fa-window-close'></i></span> " + todo + "</li>";
 }

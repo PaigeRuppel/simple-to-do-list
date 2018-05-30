@@ -1,5 +1,9 @@
 body {
 	color: #212b38;
+	background: #348F50;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -10,10 +14,12 @@ body {
 
 h1 {
 	margin: 0;
-	padding: 20px;
+	padding: 10px;
 	background: #212b38;
 	color: white;
+	font-size: 25px;
 	font-weight: normal;
+	text-transform: uppercase;
 }
 
 input {
