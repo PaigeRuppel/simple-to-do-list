@@ -3,5 +3,20 @@ $("ul").on("click", "li", function() {
 });
 
 $("ul").on("click", "span", function() {
-	$(this).parent().remove();
-})
+	$(this).parent().fadeOut(300, function() {
+		$(this).remove();
+	});
+});
+
+$("input[type='text']").keypress(function(event) {
+	if (event.which === 13) {
+		var todo = $(this).val();
+		$("ul").append(newTodo(todo));
+		$(this).val("");
+	}
+});
+
+
+function newTodo(todo) {
+	return "<li><span>X</span> " + todo + "</li>";
+}
