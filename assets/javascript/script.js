@@ -20,3 +20,7 @@ $("input[type='text']").keypress(function(event) {
 function newTodo(todo) {
 	return "<li><span><i class='fa fa-window-close'></i></span> " + todo + "</li>";
 }
+
+$("#toggleInput").on("click", function() {
+	$("input[type='text']").fadeToggle();
+})

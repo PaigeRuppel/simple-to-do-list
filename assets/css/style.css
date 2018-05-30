@@ -8,6 +8,7 @@ body {
 
 .container {
 	width: 300px;
+	background: #f7f7f7;
 	margin: 100px auto;
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
@@ -22,6 +23,10 @@ h1 {
 	text-transform: uppercase;
 }
 
+.fa-plus {
+	float: right;
+}
+
 input {
 	padding: 13px 13px 13px 20px;
 	height: 40px;
@@ -30,6 +35,7 @@ input {
 	width: 100%;
 	outline: none;
 	border: none;
+	font-size: 20px;
 }
 
 input:focus {
@@ -58,4 +64,22 @@ li:nth-child(2n) {
 	color: grey;
 	text-decoration: line-through;
 }
+
+li span {
+	background: #e73c3c;
+	color: white;
+	display: inline-block;
+	height: 40px;
+	margin-right: 20px;
+	opacity: 0;
+	text-align: center;
+	transition: 0.2s linear;
+	width: 0;
+}
+
+li:hover span {
+	width: 30px;
+	opacity: 1.0;
+}
+
 
