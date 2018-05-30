@@ -28,14 +28,14 @@ h1 {
 }
 
 input {
-	padding: 13px 13px 13px 20px;
-	height: 40px;
 	background: #f7f7f7;
-	box-sizing: border-box;
-	width: 100%;
-	outline: none;
 	border: none;
-	font-size: 20px;
+	color: #212b38;
+	font-size: 18px;
+	height: 40px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 13px 13px 13px 20px;
 }
 
 input:focus {

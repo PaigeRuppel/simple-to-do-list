@@ -2,7 +2,8 @@ $("ul").on("click", "li", function() {
 	$(this).toggleClass("completed");
 });
 
-$("ul").on("click", "span", function() {
+$("ul").on("click", "span", function(event) {
+	event.stopPropagation();
 	$(this).parent().fadeOut(300, function() {
 		$(this).remove();
 	});
